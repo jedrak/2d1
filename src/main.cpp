@@ -10,7 +10,6 @@
 std::vector<GameObject> gGameObjects;
 SDL_Window * gWindow = nullptr;
 SDL_Surface * gScreenSurface = nullptr;
-
 SDL_Surface *gXOut;
 
 bool init();
@@ -95,7 +94,7 @@ SDL_Surface* loadSurface( const std::string& path )
     return optimizedSurface;
 }
 bool loadMedia() {
-    gXOut = loadSurface(R"(C:\Users\jedra\CLionProjects\2d_games_ex1\assets\bcg.png)");
+    gXOut = loadSurface(R"(..\assets\bcg.png)");
     if(gScreenSurface == nullptr){
         SDL_Log("SDL Error: %s", SDL_GetError());
         return false;
