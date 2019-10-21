@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/sdl-cmake-msys2-project/src/GameObject.cpp" "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/sdl-cmake-msys2-project/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/GameObject.cpp.obj"
-  "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/sdl-cmake-msys2-project/src/main.cpp" "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/sdl-cmake-msys2-project/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/main.cpp.obj"
+  "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/src/GameObject.cpp" "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/GameObject.cpp.obj"
+  "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/src/Player.cpp" "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/Player.cpp.obj"
+  "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/src/main.cpp" "D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

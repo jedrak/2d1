@@ -11,18 +11,16 @@
 class GameObject {
 private:
     int x, y;
-    std::string pathToSprite;
 public:
     GameObject();
-    GameObject(int x, int y, std::string  pathToSprite);
+    GameObject(int x, int y);
+    ~GameObject();
     virtual void update() = 0;
     virtual void start() = 0;
     int getX() const;
     void setX(int x);
     int getY() const;
     void setY(int y);
-    const std::string &getPathToSprite() const;
-    void setPathToSprite(const std::string &pathToSprite);
 };
 
 

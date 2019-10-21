@@ -47,10 +47,10 @@ RM = C:\Users\jedra\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6817.32\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\sdl-cmake-msys2-project
+CMAKE_SOURCE_DIR = D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\zad1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\sdl-cmake-msys2-project\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\zad1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\sdl-cmake-msys2-project\cmake-build-debug\CMakeFiles D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\sdl-cmake-msys2-project\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\zad1\cmake-build-debug\CMakeFiles D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\zad1\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\sdl-cmake-msys2-project\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\zad1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,33 @@ src/GameObject.cpp.s:
 	$(MAKE) -f CMakeFiles\2d_games_ex1.dir\build.make CMakeFiles/2d_games_ex1.dir/src/GameObject.cpp.s
 .PHONY : src/GameObject.cpp.s
 
+src/Player.obj: src/Player.cpp.obj
+
+.PHONY : src/Player.obj
+
+# target to build an object file
+src/Player.cpp.obj:
+	$(MAKE) -f CMakeFiles\2d_games_ex1.dir\build.make CMakeFiles/2d_games_ex1.dir/src/Player.cpp.obj
+.PHONY : src/Player.cpp.obj
+
+src/Player.i: src/Player.cpp.i
+
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles\2d_games_ex1.dir\build.make CMakeFiles/2d_games_ex1.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles\2d_games_ex1.dir\build.make CMakeFiles/2d_games_ex1.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... src/GameObject.obj
 	@echo ... src/GameObject.i
 	@echo ... src/GameObject.s
+	@echo ... src/Player.obj
+	@echo ... src/Player.i
+	@echo ... src/Player.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

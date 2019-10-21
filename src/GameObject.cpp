@@ -6,9 +6,9 @@
 
 #include <utility>
 
-GameObject::GameObject(int x, int y, std::string  pathToSprite) : x(x), y(y), pathToSprite(std::move(pathToSprite)){}
+GameObject::GameObject(int x, int y) : x(x), y(y){}
 
-GameObject::GameObject() : x(0), y(0), pathToSprite(" "){}
+GameObject::GameObject() : x(0), y(0){}
 
 int GameObject::getX() const {
     return x;
@@ -22,15 +22,9 @@ void GameObject::setY(int y) {
     GameObject::y = y;
 }
 
-const std::string &GameObject::getPathToSprite() const {
-    return pathToSprite;
-}
-
-void GameObject::setPathToSprite(const std::string &pathToSprite) {
-    GameObject::pathToSprite = pathToSprite;
-}
-
 void GameObject::setX(int x) {
     GameObject::x = x;
 }
+
+GameObject::~GameObject() = default;
 

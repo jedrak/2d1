@@ -29,7 +29,7 @@
   <component name="ProjectId" id="1RvwAaSA1I7uU7wTSgtoU2SJj4L" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/git-bash.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,6 +41,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\sdl-cmake-msys2-project\include" />
+      <recent name="D:\Users\jedra\Studia\DwuwymiaroweGryKomputerowe\sdl-cmake-msys2-project\src" />
       <recent name="C:\Users\jedra\CLionProjects\2d_games_ex1\include" />
       <recent name="C:\Users\jedra\CLionProjects\2d_games_ex1\src" />
     </key>
@@ -77,8 +79,25 @@
       <workItem from="1570560736075" duration="5949000" />
       <workItem from="1570570109070" duration="3268000" />
       <workItem from="1571497317247" duration="1026000" />
-      <workItem from="1571567354781" duration="1754000" />
+      <workItem from="1571567354781" duration="12046000" />
+      <workItem from="1571654867507" duration="10203000" />
+      <workItem from="1571684651879" duration="7629000" />
     </task>
+    <task id="LOCAL-00001" summary="Player1 and Player2 movement&#10;Drawing triangles">
+      <created>1571692139201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571692139201</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Player1 and Player2 movement&#10;Drawing triangles">
+      <created>1571692180868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571692180868</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,5 +115,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Player1 and Player2 movement&#10;Drawing triangles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player1 and Player2 movement&#10;Drawing triangles" />
   </component>
 </project>
