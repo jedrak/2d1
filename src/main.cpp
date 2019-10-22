@@ -1,6 +1,3 @@
-/*This source code copyrighted by Lazy Foo' Productions (2004-2019)
-and may not be redistributed without written permission.*/
-
 //Using SDL, SDL_image, standard IO, math, and strings
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
@@ -24,7 +21,6 @@ bool loadMedia();
 //Frees media and shuts down SDL
 void close();
 
-void drawTriangle(SDL_Renderer* renderer, float* X, float* Y);
 //Loads individual image as texture
 SDL_Texture* loadTexture( std::string path );
 //The window we'll be rendering to

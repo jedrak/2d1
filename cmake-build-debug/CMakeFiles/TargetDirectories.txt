@@ -1,3 +1,3 @@
-D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/cmake-build-debug/CMakeFiles/2d_games_ex1.dir
-D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/zad1/cmake-build-debug/CMakeFiles/2d_games_ex1.dir
+D:/zad1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/zad1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,1 @@
- -LD:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/lib -lmingw32 -lSDL2_image -lSDL2main -lSDL2 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ -LD:/zad1/lib -lmingw32 -lSDL2_image -lSDL2main -lSDL2 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
