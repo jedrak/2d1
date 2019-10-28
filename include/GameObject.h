@@ -10,17 +10,17 @@
 
 class GameObject {
 private:
-    int x, y;
+    float x, y;
 public:
     GameObject();
-    GameObject(int x, int y);
+    GameObject(float x, float y);
     ~GameObject();
     virtual void update() = 0;
     virtual void start() = 0;
-    int getX() const;
-    void setX(int x);
-    int getY() const;
-    void setY(int y);
+    float getX() const;
+    void setX(float x);
+    float getY() const;
+    void setY(float y);
 };
 
 

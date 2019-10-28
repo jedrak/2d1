@@ -11,7 +11,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81570fff-fbf5-4f93-9c5d-fbcc9d7aa085" name="Default Changelist" comment="" />
+    <list default="true" id="81570fff-fbf5-4f93-9c5d-fbcc9d7aa085" name="Default Changelist" comment="Player2 is circle now&#10;camera is bugged">
+      <change afterPath="$PROJECT_DIR$/include/Player.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/2d_games_ex1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/2d_games_ex1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/linklibs.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/linklibs.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/GameObject.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/GameObject.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/GameObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GameObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObject.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +45,7 @@
   <component name="ProjectId" id="1RvwAaSA1I7uU7wTSgtoU2SJj4L" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cameraTest" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,6 +98,12 @@
       <workItem from="1571567354781" duration="12046000" />
       <workItem from="1571654867507" duration="10203000" />
       <workItem from="1571684651879" duration="7629000" />
+      <workItem from="1571692428650" duration="66000" />
+      <workItem from="1571759631896" duration="145000" />
+      <workItem from="1571995786559" duration="804000" />
+      <workItem from="1572007117972" duration="600000" />
+      <workItem from="1572262845917" duration="15000" />
+      <workItem from="1572271616656" duration="16876000" />
     </task>
     <task id="LOCAL-00001" summary="Player1 and Player2 movement&#10;Drawing triangles">
       <created>1571692139201</created>
@@ -97,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571692180868</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Player1 and Player2 movement&#10;Drawing triangles">
+      <created>1571692471905</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571692471905</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +147,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Player1 and Player2 movement&#10;Drawing triangles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player1 and Player2 movement&#10;Drawing triangles" />
+    <MESSAGE value="Player2 is circle now&#10;camera is bugged" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player2 is circle now&#10;camera is bugged" />
   </component>
 </project>

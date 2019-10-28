@@ -4,25 +4,24 @@
 
 #include "GameObject.h"
 
-#include <utility>
 
-GameObject::GameObject(int x, int y) : x(x), y(y){}
+GameObject::GameObject(float x, float y) : x(x), y(y){}
 
 GameObject::GameObject() : x(0), y(0){}
 
-int GameObject::getX() const {
+float GameObject::getX() const {
     return x;
 }
 
-int GameObject::getY() const {
+float GameObject::getY() const {
     return y;
 }
 
-void GameObject::setY(int y) {
+void GameObject::setY(float y) {
     GameObject::y = y;
 }
 
-void GameObject::setX(int x) {
+void GameObject::setX(float x) {
     GameObject::x = x;
 }
 

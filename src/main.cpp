@@ -9,9 +9,10 @@ and may not be redistributed without written permission.*/
 #include <cmath>
 #include <iostream>
 #include <Player.h>
+#include <SDL2/SDL2_gfxPrimitives.h>
 
-const int LEVEL_WIDTH = 1080;
-const int LEVEL_HEIGHT = 720;
+const int LEVEL_WIDTH = 1280;
+const int LEVEL_HEIGHT = 960;
 //Screen dimension constants
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
@@ -179,6 +180,7 @@ void drawEquilateralTriangle(SDL_Renderer *renderer, int x, int y, int a, int h)
 
 int main( int argc, char* args[] )
 {
+    float camX = 0, camY = 0;
     auto* player1 = new Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
     auto* player2 = new Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
     player1->start();
@@ -202,7 +204,7 @@ int main( int argc, char* args[] )
 
             //Event handler
             SDL_Event e;
-
+            float speed = .05;
             //While application is running
             while( !quit )
             {
@@ -215,23 +217,24 @@ int main( int argc, char* args[] )
                         quit = true;
                     }
                     //Handling player 1 input
+
                     else if( e.type == SDL_KEYDOWN ) {
                         //Select surfaces based on key press
                         switch (e.key.keysym.sym) {
                             case SDLK_UP:
-                                player1->setSpeedY(-1);
+                                player1->setSpeedY(-speed);
                                 break;
 
                             case SDLK_DOWN:
-                                player1->setSpeedY(1);
+                                player1->setSpeedY(speed);
                                 break;
 
                             case SDLK_LEFT:
-                                player1->setSpeedX(-1);
+                                player1->setSpeedX(-speed);
                                 break;
 
                             case SDLK_RIGHT:
-                                player1->setSpeedX(1);
+                                player1->setSpeedX(speed);
                                 break;
 
                         }
@@ -262,12 +265,12 @@ int main( int argc, char* args[] )
                                 //Left of dead zone
                                 if( e.jaxis.value < -JOYSTICK_DEAD_ZONE )
                                 {
-                                    player2->setSpeedX(-1);
+                                    player2->setSpeedX(-speed);
                                 }
                                     //Right of dead zone
                                 else if( e.jaxis.value > JOYSTICK_DEAD_ZONE )
                                 {
-                                    player2->setSpeedX(1);
+                                    player2->setSpeedX(speed);
                                 }
                                 else
                                 {
@@ -278,12 +281,12 @@ int main( int argc, char* args[] )
                                 //Below of dead zone
                                 if( e.jaxis.value < -JOYSTICK_DEAD_ZONE )
                                 {
-                                    player2->setSpeedY(-1);
+                                    player2->setSpeedY(-speed);
                                 }
                                     //Above of dead zone
                                 else if( e.jaxis.value > JOYSTICK_DEAD_ZONE )
                                 {
-                                    player2->setSpeedY(1);
+                                    player2->setSpeedY(speed);
                                 }
                                 else
                                 {
@@ -296,19 +299,27 @@ int main( int argc, char* args[] )
                 }
 
                 //Update game objects
-                if(SDL_GetTicks()%30==0){
-                    player1->update();
-                    player2->update();
-                }
+                player1->update();
+                player2->update();
+                camX = camX - player1->getSpeedX();
+                camY = camY - player1->getSpeedY();
 
                 //Clear screen
                 SDL_RenderClear( gRenderer );
-                SDL_RenderCopy( gRenderer, gTexture, NULL, NULL );
+                SDL_Rect render = {camX-SCREEN_WIDTH/2.0, camY - SCREEN_HEIGHT/2.0, LEVEL_WIDTH, LEVEL_HEIGHT};
+                //keep player1 on screen
+
+
+                //std::cout<<render.x<<" "<<render.y<<std::endl;
+                //std::cout<<player1->getX()<<" "<<player1->getY()<<std::endl;
+
+                SDL_RenderCopyEx(gRenderer, gTexture, nullptr, &render, 0.0, NULL, SDL_FLIP_NONE);
                 //Render red filled quad
-                SDL_Rect fillRect = { player1->getX() - 25, player1->getY() - 25, 50, 50 };
+                SDL_Rect fillRect = { static_cast<int>(player1->getX() - 25), static_cast<int>(player1->getY() - 25), 50, 50 };
                 SDL_SetRenderDrawColor( gRenderer, 0xFF, 0x00, 0x00, 0xFF );
                 SDL_RenderFillRect( gRenderer, &fillRect );
-                drawEquilateralTriangle(gRenderer, player2->getX(), player2->getY(), 50, 43);
+                //drawEquilateralTriangle(gRenderer, player2->getX(), player2->getY(), 50, 43);
+                filledCircleRGBA(gRenderer, player2->getX(), player2->getY(), 25, 0, 0, 255, 123);
                 //Update screen
                 SDL_RenderPresent( gRenderer );
             }
