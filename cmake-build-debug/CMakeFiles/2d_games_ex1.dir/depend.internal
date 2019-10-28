@@ -3,12 +3,12 @@
 
 CMakeFiles/2d_games_ex1.dir/src/GameObject.cpp.obj
  ../include/GameObject.h
- D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/src/GameObject.cpp
+ D:/zad1/src/GameObject.cpp
 CMakeFiles/2d_games_ex1.dir/src/Player.cpp.obj
  ../include/GameObject.h
  ../include/Player.h
- D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/src/Player.cpp
+ D:/zad1/src/Player.cpp
 CMakeFiles/2d_games_ex1.dir/src/main.cpp.obj
  ../include/GameObject.h
  ../include/Player.h
- D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/src/main.cpp
+ D:/zad1/src/main.cpp
