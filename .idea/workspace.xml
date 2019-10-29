@@ -16,7 +16,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/2d_games_ex1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/2d_games_ex1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2d_games_ex1.dir/src/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Player.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +98,7 @@
       <workItem from="1572007117972" duration="600000" />
       <workItem from="1572262845917" duration="15000" />
       <workItem from="1572271616656" duration="17039000" />
-      <workItem from="1572332785191" duration="3095000" />
+      <workItem from="1572332785191" duration="4281000" />
     </task>
     <task id="LOCAL-00001" summary="Player1 and Player2 movement&#10;Drawing triangles">
       <created>1571692139201</created>
@@ -132,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572335496927</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Smooth working">
+      <created>1572336076903</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572336076903</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +165,7 @@
     <MESSAGE value="Player1 and Player2 movement&#10;Drawing triangles" />
     <MESSAGE value="Player2 is circle now&#10;camera is bugged" />
     <MESSAGE value="Camera fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Camera fixed" />
+    <MESSAGE value="Smooth working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Smooth working" />
   </component>
 </project>

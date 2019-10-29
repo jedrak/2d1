@@ -308,6 +308,8 @@ int main( int argc, char* args[] )
                     player1->setSpeedY(0);
                     player1->setY(SCREEN_HEIGHT - 25);
                 }
+
+                //keep player2 in bounds
                 if(player2->getX() < 25){
                     player2->setSpeedX(0);
                     player2->setX(25);
@@ -322,13 +324,13 @@ int main( int argc, char* args[] )
                     player2->setSpeedY(0);
                     player2->setY(SCREEN_HEIGHT - 25);
                 }
-                camX = camX - player1->velX;
-                camY = camY - player1->velY;
+                camX = camX - player1->getVelX();
+                camY = camY - player1->getVelY();
 
 
                 //Update game objects
                 player1->update(0, 0);
-                player2->update(player1->getSpeedX(), player1->getSpeedY());
+                player2->update(player1->getVelX(), player1->getVelY());
 
                 //Clear screen
                 SDL_RenderClear( gRenderer );
@@ -338,7 +340,7 @@ int main( int argc, char* args[] )
 
 
                 //std::cout<<render.x<<" "<<render.y<<std::endl;
-                std::cout<<player1->getX()<<" "<<player1->getY()<<std::endl;
+                //std::cout<<player1->getX()<<" "<<player1->getY()<<std::endl;
 
                 SDL_RenderCopyEx(gRenderer, gTexture, nullptr, &render, 0.0, NULL, SDL_FLIP_NONE);
                 //Render red filled quad

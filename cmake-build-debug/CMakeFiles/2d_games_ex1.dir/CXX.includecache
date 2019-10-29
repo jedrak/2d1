@@ -16,14 +16,6 @@ SDL2/SDL_render.h
 GameObject.h
 ../include/GameObject.h
 
-D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/src/Player.cpp
-Player.h
-D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/src/Player.h
-utility
--
-iostream
--
-
 D:/Users/jedra/Studia/DwuwymiaroweGryKomputerowe/zad1/src/main.cpp
 SDL2/SDL.h
 -

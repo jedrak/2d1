@@ -51,6 +51,14 @@ float Player::distanceBetweenPlayersY(Player *arg0) {
     return this->getY() - arg0->getY();
 }
 
+float Player::getVelX() const {
+    return velX;
+}
+
+float Player::getVelY() const {
+    return velY;
+}
+
 Player::~Player() = default;
 
 
