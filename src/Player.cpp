@@ -19,9 +19,9 @@ Player::Player() : GameObject(), speedX(0), speedY(0) {}
 
 Player::Player(float x, float y) : GameObject(x, y), speedX(0), speedY(0){}
 
-void Player::update() {
-    this->setX(this->getX() + speedX );
-    this->setY(this->getY() + speedY );
+void Player::update(float secondSpeedX, float secondSpeedY) {
+    this->setX(this->getX() + speedX - secondSpeedX);
+    this->setY(this->getY() + speedY - secondSpeedY);
     //std::cout<< speedX <<" "<< speedX << std::endl;
 }
 

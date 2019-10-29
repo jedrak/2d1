@@ -293,21 +293,52 @@ int main( int argc, char* args[] )
                     }
 
                 }
-
-                //Update game objects
-                player1->update();
-                player2->update();
+                //keep player1 on screen
+                if(player1->getX() < 25){
+                    player1->setSpeedX(0);
+                    player1->setX(25);
+                } else if(player1->getX() > SCREEN_WIDTH - 25){
+                    player1->setSpeedX(0);
+                    player1->setX(SCREEN_WIDTH - 25);
+                }
+                if(player1->getY() < 25){
+                    player1->setSpeedY(0);
+                    player1->setY(25);
+                }else if(player1->getY() > SCREEN_HEIGHT - 25){
+                    player1->setSpeedY(0);
+                    player1->setY(SCREEN_HEIGHT - 25);
+                }
+                if(player2->getX() < 25){
+                    player2->setSpeedX(0);
+                    player2->setX(25);
+                } else if(player2->getX() > SCREEN_WIDTH - 25){
+                    player2->setSpeedX(0);
+                    player2->setX(SCREEN_WIDTH - 25);
+                }
+                if(player2->getY() < 25){
+                    player2->setSpeedY(0);
+                    player2->setY(25);
+                }else if(player2->getY() > SCREEN_HEIGHT - 25){
+                    player2->setSpeedY(0);
+                    player2->setY(SCREEN_HEIGHT - 25);
+                }
                 camX = camX - player1->getSpeedX();
                 camY = camY - player1->getSpeedY();
+
+
+                //Update game objects
+                player1->update(0, 0);
+                player2->update(player1->getSpeedX(), player1->getSpeedY());
 
                 //Clear screen
                 SDL_RenderClear( gRenderer );
                 SDL_Rect render = {camX-SCREEN_WIDTH/2.0, camY - SCREEN_HEIGHT/2.0, LEVEL_WIDTH, LEVEL_HEIGHT};
-                //keep player1 on screen
+
+
 
 
                 //std::cout<<render.x<<" "<<render.y<<std::endl;
-                //std::cout<<player1->getX()<<" "<<player1->getY()<<std::endl;
+                std::cout<<player1->getX()<<" "<<player1->getY()<<std::endl;
 
                 SDL_RenderCopyEx(gRenderer, gTexture, nullptr, &render, 0.0, NULL, SDL_FLIP_NONE);
                 //Render red filled quad

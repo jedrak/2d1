@@ -15,7 +15,7 @@ public:
     GameObject();
     GameObject(float x, float y);
     ~GameObject();
-    virtual void update() = 0;
+    //virtual void update() = 0;
     virtual void start() = 0;
     float getX() const;
     void setX(float x);

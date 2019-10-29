@@ -27,7 +27,7 @@ public:
     float distanceBetweenPlayersX(Player *arg0);
     float distanceBetweenPlayersY(Player *arg0);
     //bool loadTexture(std::string path);
-    void update();
+    void update(float secondSpeedX, float secondSpeedY);
     void start();
 
 };
