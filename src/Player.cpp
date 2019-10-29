@@ -20,8 +20,11 @@ Player::Player() : GameObject(), speedX(0), speedY(0) {}
 Player::Player(float x, float y) : GameObject(x, y), speedX(0), speedY(0){}
 
 void Player::update(float secondSpeedX, float secondSpeedY) {
-    this->setX(this->getX() + speedX - secondSpeedX);
-    this->setY(this->getY() + speedY - secondSpeedY);
+    float smooth = .5;
+    velX = speedX * (1 - smooth) + velX * smooth;
+    velY = speedY * (1 - smooth) + velY * smooth;
+    this->setX(this->getX() + velX - secondSpeedX);
+    this->setY(this->getY() + velY - secondSpeedY);
     //std::cout<< speedX <<" "<< speedX << std::endl;
 }
 

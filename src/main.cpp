@@ -322,8 +322,8 @@ int main( int argc, char* args[] )
                     player2->setSpeedY(0);
                     player2->setY(SCREEN_HEIGHT - 25);
                 }
-                camX = camX - player1->getSpeedX();
-                camY = camY - player1->getSpeedY();
+                camX = camX - player1->velX;
+                camY = camY - player1->velY;
 
 
                 //Update game objects

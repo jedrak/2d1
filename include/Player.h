@@ -12,6 +12,7 @@
 class Player : public GameObject{
     float speedX, speedY;
 public:
+    float velX, velY;
     float getSpeedX() const;
 
     float getSpeedY() const;
